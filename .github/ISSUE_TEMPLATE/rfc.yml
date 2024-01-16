@@ -1,0 +1,105 @@
+name: Request For Change (RFC)
+description: Create a request for change which affects the network or servers.
+title: "[RFC] <title>"
+labels: ["RFC", "Needs Review"]
+body:
+  - type: textarea
+    attributes:
+      label: High level overview of the change
+      description: TL:DR of the work to be completed. What are you going to do in summary?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reason for change
+      description: Why is the change needed? Detail any consequences that may/will occur should the change not be implemented.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Supporting documentation
+      description: Any supporting evidence that will aide the decision making for weather this should be approved or not.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Change start date & time
+      description: Expected date & time when the change will begin.
+      placeholder: YYYY-MM-DD HH:mm
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Change end date & time
+      description: Expected date & time hen the change will end.
+      placeholder: YYYY-MM-DD HH:mm
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Change to an existing service?
+      description: Is this a change to an existing service?
+      options:
+        - "Please Select"
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Services affected
+      description: What services will be affected by this change?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Impact
+      description: Detail the impact, including any downtime during the change window.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Who will be making the change?
+      description: List the individuals and third parties involved in implementing & testing the change.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Communication plan
+      description: Detail how and when stakeholders will be notified of the change. If emails need to be sent to the wider business, attach copies of the emails to be sent.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Risks and mitigation
+      description: Detail the likelihood and impact of any risks relating to the change, along with how these will be mitigated.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Pre-change preparation
+      description: Detail the steps taken to prepare for this change.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Implementation plan
+      description: Detail the steps to be taken to implement the change. Include links to any documentation required for the implementation.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Back-out plan
+      description: Detail the steps and time frame to revert/back-out of the change if unsuccessful.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Post-change test plan
+      description: Detail the steps to be taken which will determine weather the change has been successful and that all services are operational.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Documentation
+      description: Detail and documentation required for the change, or which needs to be updated as a result of the change.
