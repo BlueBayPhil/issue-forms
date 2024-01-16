@@ -40,7 +40,6 @@ body:
       label: Change to an existing service?
       description: Is this a change to an existing service?
       options:
-        - "Please Select"
         - "Yes"
         - "No"
     validations:
