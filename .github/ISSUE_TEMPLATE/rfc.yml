@@ -1,8 +1,11 @@
 name: Request For Change (RFC)
 description: Create a request for change which affects the network or servers.
-title: "[RFC] <title>"
-labels: ["RFC", "Needs Review"]
+title: "[RFC] - "
+labels: ["rfc", "needs review"]
 body:
+  - type: markdown
+    attributes:
+      value: All fields are required, unless specified. Change requests which have not been fully completed will be rejected without reason.
   - type: textarea
     attributes:
       label: High level overview of the change
@@ -17,7 +20,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Supporting documentation
+      label: Supporting documentation (optional)
       description: Any supporting evidence that will aide the decision making for weather this should be approved or not.
   - type: input
     attributes:
@@ -98,5 +101,5 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Documentation
+      label: Documentation (optional)
       description: Detail and documentation required for the change, or which needs to be updated as a result of the change.
