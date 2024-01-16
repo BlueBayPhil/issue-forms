@@ -5,7 +5,7 @@ labels: ["rfc", "needs review"]
 body:
   - type: markdown
     attributes:
-      value: All fields are required, unless specified. Change requests which have not been fully completed will be rejected without reason.
+      value: "## All fields are required, unless specified. Change requests which have not been fully completed will be rejected without reason."
   - type: textarea
     attributes:
       label: High level overview of the change
