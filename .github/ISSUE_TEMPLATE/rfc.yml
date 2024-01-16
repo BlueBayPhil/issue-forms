@@ -19,8 +19,6 @@ body:
     attributes:
       label: Supporting documentation
       description: Any supporting evidence that will aide the decision making for weather this should be approved or not.
-    validations:
-      required: true
   - type: input
     attributes:
       label: Change start date & time
